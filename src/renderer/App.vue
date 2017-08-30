@@ -4,12 +4,6 @@
   </div>
 </template>
 
-<script>
-  export default {
-    name: 'AdminUJV'
-  }
-</script>
-
 <style lang="scss">
 
     /**

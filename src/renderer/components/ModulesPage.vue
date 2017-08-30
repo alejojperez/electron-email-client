@@ -5,13 +5,20 @@
 </template>
 
 <script>
-    export default {
-        name: 'landing-page',
-        methods: {
-            open(link)
-            {
-                this.$electron.shell.openExternal(link)
-            }
+    export default
+    {
+        data: function ()
+        {
+            return {
+                name: 'AdminUJV',
+                modules: [
+                    {
+                        name: "Web Mail",
+                        icon: "fa fa-envelope",
+                        url: "/web-mail",
+                    }
+                ],
+            };
         }
     }
 </script>
