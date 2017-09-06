@@ -1,11 +1,11 @@
-/****************************** SLIDE FADE ******************************/
-.slide-fade-enter-active {
+/****************************** SLIDE FADE IN ******************************/
+.slide-fade-in-enter-active {
     transition: all .5s ease;
 }
-.slide-fade-leave-active {
+.slide-fade-in-leave-active {
     display: none;
 }
-.slide-fade-enter {
+.slide-fade-in-enter {
     transform: translateX(10px);
     opacity: 0;
 }

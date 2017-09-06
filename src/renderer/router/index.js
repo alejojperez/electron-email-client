@@ -13,7 +13,7 @@ export default new Router({
         {
             path: '/modules/web-mail',
             name: 'modules-web-mail-page',
-            component: require('@/components/pages/modules/WebEmailPage')
+            component: require('@/components/pages/modules/WebMailPage')
         },
         {
             path: '*',

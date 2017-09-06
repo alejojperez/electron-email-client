@@ -1,5 +1,5 @@
 <template>
-    <transition name="slide-fade" appear>
+    <transition name="slide-fade-in" appear>
         <div class="padding-10">
 
             <page-title name="Modules"></page-title>

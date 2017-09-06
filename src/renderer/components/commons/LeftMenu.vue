@@ -1,5 +1,5 @@
 <template>
-    <transition name="slide-fade" appear>
+    <transition name="slide-fade-in" appear>
         <div id="left-menu-container">
             <aside class="menu padding-10">
                 <p class="menu-label">Modules</p>
