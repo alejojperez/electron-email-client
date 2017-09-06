@@ -57,9 +57,10 @@ let rendererConfig = {
                     options: {
                         extractCSS: process.env.NODE_ENV === 'production',
                         loaders: {
-                            sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax=1&data=@import "./src/renderer/globals"',
-                            scss: 'vue-style-loader!css-loader!sass-loader?data=@import "./src/renderer/globals";'
-                        }
+                            sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax=1&data=@import "./src/renderer/assets/scss/globals"',
+                            scss: 'vue-style-loader!css-loader!sass-loader?data=@import "./src/renderer/assets/scss/globals";'
+                        },
+                        resources: './src/renderer/assets/scss/functions'
                     }
                 }
             },

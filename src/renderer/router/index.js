@@ -4,15 +4,21 @@ import Router from 'vue-router';
 Vue.use(Router);
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'modules-page',
-      component: require('@/components/ModulesPage')
-    },
-    {
-      path: '*',
-      redirect: '/'
-    }
-  ]
+    routes: [
+        {
+            path: '/modules',
+            name: 'modules-page',
+            component: require('@/components/pages/ModulesPage'),
+        },
+        {
+            path: '/modules/web-mail',
+            name: 'modules-web-mail-page',
+            component: require('@/components/pages/modules/WebEmailPage')
+        },
+        {
+            path: '*',
+            redirect: '/modules'
+        }
+    ],
+    mode: "hash"
 });
